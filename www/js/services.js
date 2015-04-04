@@ -47,4 +47,9 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+.factory('hi', function() {
+  return function hi() {
+    console.log('hi');
+  };
 });

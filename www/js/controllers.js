@@ -1,5 +1,12 @@
 angular.module('starter.controllers', [])
 
+.controller('HomeCtrl', function($scope) {
+	$scope.homes = 'hello world';
+	$scope.check = function() {
+		window.location = '/'
+	};
+})
+
 .controller('DashCtrl', function($scope,hi,Chats) {
 	$scope.hi = hi;
 	$scope.hi();
